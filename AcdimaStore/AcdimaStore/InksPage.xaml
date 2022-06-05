@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AcdimaStore.InksPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="BarcodeIdEntry" Placeholder="Ink ID" InputTransparent="True"/>
+            <Entry x:Name="NameEntry" Placeholder="Name"/>
+            <Entry x:Name="NumberOfPagesEntry" Placeholder="ex: 500"/>
+            <Entry x:Name="QuantityEntry" Placeholder="0"/>
+
+            <Entry x:Name="colorEntry" Placeholder="Address"/>
+            <Picker Title="Select Color">
+                <Picker.Items>
+                    <x:String>Item1</x:String>
+                    <x:String>Item2</x:String>
+                    <x:String>Item3</x:String>
+                    <x:String>Item4</x:String>
+                </Picker.Items>
+            </Picker>
+                    
+            
+            <Entry x:Name="AlertLevelEntry" Placeholder="Address"/>
+            <Picker Title="" />
+            
+            <Button Text="Save" x:Name="saveButton" Clicked="SaveButton_Clicked"/>
+            <Button Text="Cancel" x:Name="CancelButton" Clicked="CancelButton_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

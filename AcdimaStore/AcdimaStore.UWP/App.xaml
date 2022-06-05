@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="AcdimaStore.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AcdimaStore.UWP"
+    RequestedTheme="Light">
+
+</Application>

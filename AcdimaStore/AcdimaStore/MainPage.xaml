@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AcdimaStore"
+             x:Class="AcdimaStore.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Button 
+                x:Name="testBtn"
+                Text="Click Me!"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand" 
+                Clicked="TestBtn_Clicked"/>
+            <Button
+                x:Name="retriveBtn"
+                Text="Retrive"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand" 
+                Clicked="RetriveBtn_Clicked"/>
+            <ListView x:Name="InksListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding BarcodeID}" Detail="{Binding Name}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
